@@ -1,4 +1,4 @@
-module github.com/martin-helmich/go-varnish-client
+module github.com/brockwood/go-varnish-client
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

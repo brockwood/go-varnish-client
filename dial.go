@@ -38,7 +38,7 @@ func DialTCP(ctx context.Context, address string) (*Client, error) {
 		client.authChallenge = []byte(strings.Split(string(resp.Body), "\n")[0])
 		client.authenticationRequired = true
 
-		glog.Infof("authentication required. challenge string: %s", strconv.Quote(string(client.authChallenge)))
+		glog.V(7).Infof("authentication required. challenge string: %s", strconv.Quote(string(client.authChallenge)))
 	}
 
 	return &client, nil
